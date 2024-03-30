@@ -6,33 +6,41 @@ public class Upscaling {
         int T=sc.nextInt();
         for(int i=0;i<T;i++)
         {
-            int n=sc.nextInt();
-            if(n%2!=0)
-            n=n+1;
-            
-            for(int k=0;k<2*n/2;k++)
+          int count=0;
+          boolean test=false;
+          int n=sc.nextInt();
+          for(int k=0;k<n;k++)
+          {
+            if(count==2)
             {
-                boolean a=true;
-                if(k%2==0)
-                a=true;
+                if(test==false) test=true;
                 else
-                a=false;
-                for(int j=0;j<2*n/2;j++)
-                {
-                    if(a==true)
-                    {
-                        System.out.print("##\n##");
-                        a=false;
-                    }
-                    else
-                    {
-                        System.out.print("..\n..");
-                        a=true;
-                    }
-                }
-                System.out.println("\n");
-         
-           }
+                test=false;
+                count=0;
+            }
+            for(int j=0;j<n;j++)
+            {
+              for(int m=0;m<n;m++)
+              {
+                  if(test==false)
+                  {
+                      System.out.print("##");
+                      test=true;
+                  }
+                  else
+                  {
+                      System.out.print("..");
+                      test=false;
+                  }
+              }
+            } 
+            count++;
+            System.out.print("\n"); 
+          }
+          
+
+
+            
         }
         sc.close();
     }
