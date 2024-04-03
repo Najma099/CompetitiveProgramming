@@ -15,7 +15,7 @@ public class Halloumi_Boxes
             {
                 arr[j]=sc.nextInt();
             }
-            if(isDec(arr))
+            if(isAce(arr))
             System.out.println("YES");
             else if(K>1)
             System.out.println("YES");
@@ -27,20 +27,16 @@ public class Halloumi_Boxes
         sc.close();
     
     }
-  public static boolean isDec(int arr[])
+  public static boolean isAce(int arr[])
   {
-    boolean ans=false;
+    boolean ans=true;
     for(int i=0;i<arr.length-1;i++)
     {
-        if(arr[i]<=arr[i+1])
+        if(arr[i]>arr[i+1])
         {
-            ans=true;
-        }
-        else{
             ans=false;
             break;
         }
-
     }
     return ans;
  }

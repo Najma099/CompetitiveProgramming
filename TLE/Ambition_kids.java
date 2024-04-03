@@ -1,4 +1,4 @@
-package codeforces;
+package TLE;
 
 
 import java.util.Scanner;
