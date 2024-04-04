@@ -1,4 +1,4 @@
-package codeforces;
+
 import java.util.Scanner;
 public class Football {
     public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class Football {
         String s= sc.next();
        
         int count=0;
-        int X=s.charAt(0);
+        char X=s.charAt(0);
         for(int i=0;i<s.length();i++)
         {
             if(count==7)
