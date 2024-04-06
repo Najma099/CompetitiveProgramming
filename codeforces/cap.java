@@ -1,4 +1,4 @@
-package codeforces;
+
 import java.util.Scanner;
 public class cap {
     public static void main(String[] args) {

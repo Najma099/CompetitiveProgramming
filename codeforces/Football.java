@@ -20,7 +20,7 @@ public class Football {
             else
             {
                 X=s.charAt(i);
-                count=0;
+                count=1;
             }
         }
         if(count>6)

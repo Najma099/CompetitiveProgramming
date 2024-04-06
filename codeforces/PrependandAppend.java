@@ -8,17 +8,27 @@ public class PrependandAppend {
         {
             int n=sc.nextInt();
             String s=sc.next();
-            int b=n-1;
-            for(int j=0;j<=b;j++,b--)
+            int high=n-1;
+            int low=0;
+            boolean flag=false;
+            while(low<=high)
             {
-                if((s.charAt(j)=='0'&& s.charAt(b)=='1')||(s.charAt(j)=='1' && s.charAt(b)=='0') )
-                continue;
+                if((s.charAt(low)=='1' && s.charAt(high)=='0')|| (s.charAt(low)=='0' && s.charAt(high)=='1'))
+                {
+                    low++;
+                    high--;
+                    flag=true;
+                }
                 else
                 {
-                    System.out.println(b-j+1);
+                    System.out.println(high-low+1);
+                    flag=false;
                     break;
                 }
+
             }
+            if(flag==true)
+            System.out.println(0);
         }
     }
 }
