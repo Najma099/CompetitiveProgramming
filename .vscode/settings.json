@@ -1,6 +1,9 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
-        "codeforces"
-    ]
+        "codeforces",
+        "TLE",
+        "Contest"
+    ],
+    "java.project.referencedLibraries": []
 }
