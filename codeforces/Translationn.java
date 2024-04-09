@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Translation {
+public class Translationn {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         String S=sc.next();
@@ -11,9 +11,13 @@ public class Translation {
             if(T.charAt(i)==S.charAt(n-i))
             flag=true;
             else
-            break;
+            {
+              flag=false;
+              break;   
+            }
+            
         }
-        if(flag==true)
+        if(flag)
         System.out.println("YES");
         else
         System.out.println("NO");
