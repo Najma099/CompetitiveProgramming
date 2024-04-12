@@ -1,23 +1,25 @@
 import java.util.Scanner;
+import java.util.Arrays;
 public class Dragon {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int s=sc.nextInt();
         int n=sc.nextInt();
-        int a[][]=new int[n][2];
+        int a[]=new int[n];
+        int b[]=new int[n];
         for(int i=0;i<n;i++)
         {
-            for(int j=0;j<2;j++)
-            {
-                a[i][j]=sc.nextInt();
-            }
+            a[i]=sc.nextInt();
+            b[i]=sc.nextInt();
         }
-        boolean flag=true;
-        for(int i=0;i<n;i++)
+        Arrays.sort(a);
+        boolean flag=false;
+        for(int j=0;j<n;j++)
         {
-            if(s>a[i][0])
+            if(s>a[j])
             {
-                s+=a[i][1];
+                s=s+b[j];
+                flag=true;
             }
             else
             {
