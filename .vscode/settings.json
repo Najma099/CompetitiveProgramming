@@ -3,7 +3,8 @@
     "java.project.sourcePaths": [
         "codeforces",
         "TLE",
-        "Contest"
+        "Contest",
+        "leetcode"
     ],
     "java.project.referencedLibraries": []
 }
