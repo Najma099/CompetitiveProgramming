@@ -14,61 +14,38 @@ public class Inhabitant {
             {
                 arr[j]=sc.nextInt();
             }
-            int sum=0;
-            int count=0;
-            if(n%2==0)
-            n=n/2;
-            else
-            n=n/2+1;
+            int n=0;
+            int m=0;
             if(k%2==0)
-            {
-                for(int s=0;s<n;s++)
-                {
-                    if(arr[s]+sum<=k/2)
-                    {
-                        sum+=arr[s];
-                        count++;
-                    }
-                    else
-                    break;
-                }
-                sum=0;
-                for(int s=n-1;s>=n;s--)
-                {
-                    if(arr[s]+sum<=k/2)
-                    {
-                        sum+=arr[s];
-                        count++;
-                    }
-                    else
-                    break;
-                }
-            }
+              n=k/2;
+              m=k/2;
             else
+              n=k/2+1;
+              m=k/2;
+            int count =0;
+            int i=0;
+            int j=n-1;
+            while(i<j)
             {
-                for(int s=0;s<n;s++)
+                if(arr[i]>=n)
                 {
-                    if(arr[s]+sum<=k/2+1)
-                    {
-                        sum+=arr[s];
-                        count++;
-                    }
-                    else
+                    count++;
+                    n=n-arr[i]; 
+                }
+                else
+                {
                     break;
                 }
-                sum=0;
-                for(int s=n-1;s>=n;s--)
+                if(arr[j]>=m)
                 {
-                    if(arr[s]+sum<=k/2)
-                    {
-                        sum+=arr[s];
-                        count++;
-                    }
-                    else
+                    count++;
+                    m=m-arr[j];
+                }
+                else
+                {
                     break;
                 }
             }
-            System.out.println(count);
         }
     }
 }
