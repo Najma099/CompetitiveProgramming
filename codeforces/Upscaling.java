@@ -1,4 +1,4 @@
-package codeforces;
+
 import java.util.Scanner;
 public class Upscaling {
     public static void main(String[] args) {

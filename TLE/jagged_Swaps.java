@@ -1,4 +1,4 @@
-package TLE;
+
 import java.util.Scanner;
 public class jagged_Swaps {
     public static void main(String[] args) {

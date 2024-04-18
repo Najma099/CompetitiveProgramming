@@ -1,4 +1,4 @@
-package codeforces;
+
 import java.util.Scanner;
 public class Easy_solution {
     public static void main(String[] args) {

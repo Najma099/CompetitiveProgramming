@@ -1,4 +1,4 @@
-package TLE;
+
 import java.util.Scanner;
 public class Halloumi_Boxes
 {

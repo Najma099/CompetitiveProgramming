@@ -28,5 +28,6 @@ public class Queue {
         
         
         System.out.println(new String(arr));
+        sc.close();
     }
 }

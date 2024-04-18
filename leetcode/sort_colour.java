@@ -1,4 +1,4 @@
-package leetcode;
+
 public class sort_colour {
     public void sortColors(int[] arr) {
         int zero=0;

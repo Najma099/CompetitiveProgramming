@@ -18,6 +18,6 @@ public class make_it_beautiful {
                 
             }
         }
-        
+        sc.close();  
     }
 }

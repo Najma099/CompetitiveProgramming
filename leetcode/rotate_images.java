@@ -1,4 +1,4 @@
-package leetcode;
+
 
 public class rotate_images {
     public void transpose(int [][] matrix){

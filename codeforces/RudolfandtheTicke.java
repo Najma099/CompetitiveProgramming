@@ -29,5 +29,6 @@ public class RudolfandtheTicke {
             }
             System.out.println(count);
         }
+        sc.close();
     }
 }

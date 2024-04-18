@@ -1,4 +1,4 @@
-package codeforces;
+
 import java.util.Scanner;
 public class Stair_Peak {
     public static void main(String[] args) {

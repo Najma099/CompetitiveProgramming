@@ -37,5 +37,6 @@ public class odd_Queries {
                 System.out.println("NO");
             }
         }
+        sc.close();
     }
 }

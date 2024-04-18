@@ -28,5 +28,6 @@ public class line_trip {
                 System.out.println(max); 
             }
     }
+    sc.close();
 }
 }

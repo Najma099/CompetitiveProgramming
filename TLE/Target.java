@@ -1,4 +1,4 @@
-package TLE;
+
 import java.util.Scanner;
 public class Target {
     public static void main(String[] args) {

@@ -21,5 +21,6 @@ public class Translationn {
         System.out.println("YES");
         else
         System.out.println("NO");
+        sc.close();
     }
 }

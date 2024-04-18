@@ -48,5 +48,6 @@ public class Doremy_paint {
            System.out.println("NO");
         }
      }
+     sc.close();
    } 
 }

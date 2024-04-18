@@ -30,5 +30,6 @@ public class PrependandAppend {
             if(flag==true)
             System.out.println(0);
         }
+        sc.close();
     }
 }

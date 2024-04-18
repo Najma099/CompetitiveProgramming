@@ -1,4 +1,4 @@
-package leetcode;
+
 
 public class spiral_Matrix_II {
     public int[][] generateMatrix(int n) {

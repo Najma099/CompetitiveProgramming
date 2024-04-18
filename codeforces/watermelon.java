@@ -1,4 +1,4 @@
-package codeforces;
+
 import java.util.Scanner;
 public class watermelon {
     public static void main(String[] args) {

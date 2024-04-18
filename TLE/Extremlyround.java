@@ -19,5 +19,6 @@ public class Extremlyround {
             else
             System.out.println(10+9+9+9+9+n/100000-1);
         }
+        sc.close();
     }
 }

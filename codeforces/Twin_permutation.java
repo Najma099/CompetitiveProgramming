@@ -19,5 +19,6 @@ public class Twin_permutation {
             }
             System.out.println();
         }
+        sc.close();
     }
 }

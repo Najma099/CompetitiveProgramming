@@ -23,5 +23,6 @@ public class buttons{
                 System.out.println("Second");
             }
         }
+        sc.close();
     }
 }

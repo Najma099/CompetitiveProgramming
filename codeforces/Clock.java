@@ -29,5 +29,6 @@ public class Clock {
             }
             
         }
+        sc.close();
     }
 }

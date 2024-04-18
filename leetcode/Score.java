@@ -11,5 +11,6 @@ public class Score {
             sum=sum+Math.abs(S.charAt(i)-S.charAt(i+1));
         }
         System.out.println(sum);
+        sc.close();
     }
 }
