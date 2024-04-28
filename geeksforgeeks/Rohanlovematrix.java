@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 public class Rohanlovematrix {
     public static long mod = 1000000007;  
@@ -35,6 +36,7 @@ public class Rohanlovematrix {
             }
         }
         return result;
+        sc.close();
     }
 }
 
