@@ -4,7 +4,9 @@
         "codeforces",
         "TLE",
         "Contest",
-        "leetcode"
+        "leetcode",
+        "assignment_CP",
+        "geeksforgeeks"
     ],
     "java.project.referencedLibraries": []
 }

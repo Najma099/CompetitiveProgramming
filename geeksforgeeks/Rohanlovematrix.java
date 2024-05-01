@@ -36,7 +36,7 @@ public class Rohanlovematrix {
             }
         }
         return result;
-        sc.close();
+    
     }
 }
 

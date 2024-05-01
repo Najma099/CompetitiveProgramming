@@ -1,4 +1,4 @@
-package assignment_CP;
+
 public class merge {
     public static void main(String[] args) {
         int arr[]={2,4,11,17,19};
@@ -29,7 +29,7 @@ public class merge {
         }
         else
         {
-            crr[i]=brr[b]
+            crr[i]=brr[b];
             i++;
         }
        
