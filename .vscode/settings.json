@@ -1,13 +1,14 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
     "java.project.sourcePaths": [
-        "codeforces",
-        "TLE",
-        "Contest",
-        "leetcode",
         "assignment_CP",
+        "codechef",
+        "codeforces",
+        "Contest",
+        "cracking_the_coding",
         "geeksforgeeks",
-        "cracking_the_coding"
+        "leetcode",
+        "TLE"
     ],
     "java.project.referencedLibraries": []
 }
