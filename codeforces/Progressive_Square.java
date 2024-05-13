@@ -18,7 +18,7 @@ public class Progressive_Square {
             brr[0]=arr[0];
             for(int j=1;j<n*n;j++)
             {
-               brr[j]=brr[0]+(j%3)*d+j/3*c; 
+               brr[j]=brr[0]+(j%n)*d+j/n*c; 
             }
             Arrays.sort(brr);
             boolean flag=true;
