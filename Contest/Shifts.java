@@ -3,21 +3,25 @@ import java.util.Scanner;
 public class Shifts {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int T = sc.nextInt(); 
-        for(int i=0;i<T;i++)
+        int t = sc.nextInt();
+        sc.nextLine(); 
+        while (t-- > 0) 
         {
-            String S=sc.next();
-            int ans=0;
-            int temp=0;
-            for(int j=0;j<S.length();j++)
+            String s = sc.nextLine();
+            long ans = 0;
+            int oneCount = 0;
+
+            for (char ch : s.toCharArray()) 
             {
-                if(S.charAt(j)=='1')
-                temp++;
-                else if(temp !=0)
-                ans+=temp+1;
+                if (ch == '1') {
+                    oneCount++;
+                } else {
+                    if (oneCount != 0)
+                        ans += (oneCount + 1);
+                }
             }
             System.out.println(ans);
         }
         sc.close();
-}
+    }
 }
