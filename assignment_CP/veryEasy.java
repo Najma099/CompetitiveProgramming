@@ -16,7 +16,6 @@ public class veryEasy {
         {
             long mid=low + (high - low)/2;
             Long ans=(mid/x) + (mid/y) +1;
-            //long res=0;
             if(check(ans,n))
             {
                 res=mid;
