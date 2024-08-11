@@ -25,7 +25,7 @@ public class ParitySum {
             }
 
             if (countOdd == n || countOdd == 0) {
-                System.out.println("OUTPUT:"+0);
+                System.out.println(0);
             } else {
                 int ans = 0;
                 Arrays.sort(arr);
@@ -41,7 +41,7 @@ public class ParitySum {
                     }
                     //System.out.print("MAX:" + max);
                 }
-                System.out.println("OUTPUT:"+ans);
+                System.out.println(ans);
             }
         }
         sc.close();
