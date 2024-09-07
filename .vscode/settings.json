@@ -10,7 +10,12 @@
         "HackerEarth",
         "leetcode",
         "TLE",
-        "CSES"
+        "CSES",
+        "USACO"
     ],
-    "java.project.referencedLibraries": []
+    "java.project.referencedLibraries": [],
+    "files.associations": {
+        "ios": "cpp",
+        "iostream": "cpp"
+    }
 }
