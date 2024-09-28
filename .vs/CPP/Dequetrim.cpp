@@ -41,7 +41,7 @@ int main() {
 
         }
        
-         cout << n - maxL << endl;
+        cout << n - maxL << endl;
 
 
     }
