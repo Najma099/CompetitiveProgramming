@@ -63,33 +63,33 @@ void solve() {
         int idx = 0;
         if(y == 1) {
             if(!aa.empty()) {
-                ans = (*aa.begin()).first;
-                idx = (*aa.begin()).second;
+                ans = (aa.begin())->first;
+                idx = (aa.begin())->second;
                 cout << ans << '\n';
                 aa.erase(aa.begin());
             } else {
-                cout << "-1\n";
+                cout << "-1" << " ";
             }
         }
         else if(y == 2) {
             if(!bb.empty()) {
-                ans = (*bb.begin()).first;
-                idx = (*bb.begin()).second;
+                ans = (bb.begin())->first;
+                idx = (bb.begin())->second;
                 cout << ans << '\n';
                 bb.erase(bb.begin());
             } else {
-                cout << "-1\n";
+                cout << "-1" << " ";
             }
             
         } 
         else {
             if(!cc.empty()) {
-                ans = (*cc.begin()).first;
-                idx = (*cc.begin()).second;
+                ans = (cc.begin())->first;
+                idx = (cc.begin())->second;
                 cout << ans << '\n';
                 cc.erase(cc.begin());
             } else {
-                cout << "-1\n";
+                cout << "-1" << " ";
             }
         }
 
