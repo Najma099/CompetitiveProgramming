@@ -9,7 +9,18 @@ int solve() {
     int t;
     cin >> t;
     while (t--) {
+        ll a,b;
+        cin >> a >> b;
 
+        if(a >= b) 
+            cout << a << '\n';
+        else {
+            ll c = 1;
+            while(a > 0 && c > 0) {
+                c *= 2;
+                f()
+            }
+        }
     }
     return 0;
 }

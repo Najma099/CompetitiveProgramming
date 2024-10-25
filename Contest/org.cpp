@@ -9,7 +9,18 @@ int solve() {
     int t;
     cin >> t;
     while (t--) {
+        int n;
+        cin >> n;
+        int min = __INT_MAX;
+        int max = __INT32_MAX;
+        for(int i = 0; i < n; i++) {
+            int x;
+            cin >> x;
+            min = min(min,x);
+            max = max(max,x);
 
+        }
+        cout << n - 1 * (max - min) << '\n';
     }
     return 0;
 }
