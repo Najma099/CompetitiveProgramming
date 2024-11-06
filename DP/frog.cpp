@@ -5,15 +5,35 @@ typedef long long ll;
 const long long MOD = 1000000007;
 
 
-int n , k;
+int N, K;
 vector<int> arr;
+int dp[10005];
+
+int rec(int level) {
+    if(level >= n)
+        return 0;
+
+    if(dp[level] != -1) {
+        return dp[level];
+    }
+    int ans = __INT16_MAX__;
+    for(int i = 1; i <= K; i++) {
+        ans = min(ans,rec(level + i)+ abs(arr[level]-arr[level + i]));
+    }
+    return dp[level] = ans;
+}
 int solve() {
     IOS
     int t;
     t = 1;
     while (t--) {
-        cin >> n >> k;
+        cin >> N >> K;
         arr.resize(n);
+        for(int i = 0; i < N; i++) {
+            cin >> arr[i];
+        }
+        memset(dp,-1,sizeof(dp));
+        cout << rec(0) << '\n';
     }
     return 0;
 }
