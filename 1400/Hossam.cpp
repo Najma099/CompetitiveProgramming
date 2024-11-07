@@ -1,45 +1,69 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>
-
+#include <set>
+ 
 using namespace std;
-
+ 
 int main() {
     int t;
     cin >> t;
     while(t--) {
-        int m, n;
+        int n, m;
         cin >> n >> m;
-        vector<bool> check(n + 1,0);
-        vector<pair<int,int> > arr(m);
+        
+        vector<bool> check(n + 1, false);
+        multiset<pair<int, int>> arr;
+        
         for(int i = 0; i < m; i++) {
-            int a,b;
+            int a, b;
             cin >> a >> b;
-            if(a > b) {
-                int temp = b;
-                b = a;
-                a = temp;
-                check[a] = 1;
-            }
-            arr[i].first = a;
-            arr[i].second = b;
+            if(a > b) swap(a, b);
+            check[a] = true;
+            arr.insert({a, b});
         }
-
+        
         int ans = n;
-        int point = 0;
+        auto point = arr.begin();
+        int conti = 0;
+        
         for(int i = 1; i <= n; i++) {
             if(check[i]) {
-                int dis = arr[point].second;
-                point++;
+                conti = 0;
+                int dis = point->second;
+                
+                // Check if point is at the end before incrementing
+                if (point != arr.end()) {
+                    ++point; 
+                }
+                
                 int j = i + 1;
+                bool flag = false;
+                
                 while(j < dis) {
                     if(check[j]) {
-                        dis = 
+                        dis = min(dis, point->second);
+                        if (point != arr.end()) {
+                            ++point;
+                        }
                     }
+                    j++;
+                    flag = true;
                 }
+ 
+                if(flag) {
+                    ans++;
+                    i = j;
+                    continue;
+                }
+            } else {
+                conti++;
             }
         }
-
+        
+        if(conti > 1)
+            ans++;
+        
+        cout << ans << '\n';
     }
     return 0;
 }

@@ -5,26 +5,7 @@ typedef long long ll;
 const long long MOD = 1000000007;
 
 
-int rec(string& s) {
-   
-    int count = 0;
-    int sum = 0;
-    int dp[101];
-    for(int i = 0; i < s.size(); i++) {
 
-        if(s[i] == 'A')
-            dp[i] = count;
-        else if (s[i] == 'Q') {
-            for(int j = 0; j < i; j++) {
-                if(s[j] == 'A')
-                    sum += dp[j];
-            }
-            count++;
-        }
-
-    }
-    return sum;
-}
 
 int solve() {
     IOS
