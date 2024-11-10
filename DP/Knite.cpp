@@ -26,7 +26,7 @@ int rec(int n, int m) {
 int solve() {
     IOS
     int t;
-    cin >> t;
+    t = 1;
     while (t--) {
        cin >> N >> M;
        memset(dp, -1, sizeof(dp));
