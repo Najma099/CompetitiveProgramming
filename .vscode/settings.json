@@ -18,7 +18,8 @@
         "ios": "cpp",
         "iostream": "cpp",
         "ostream": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "cstring": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
