@@ -10,11 +10,9 @@ const long long MOD = 1000000007;
 int solve() {
     IOS
     int t;
-    t = 1;
+    cin >> t;
     while (t--) {
-        string s;
-        cin >> s;
-        cout << rec(s);
+  
     }
     return 0;
 }
