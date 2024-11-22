@@ -17,13 +17,13 @@ int solve() {
         ll max_price;
         cin >> max_price;
 
-        auto it = tickets.upper_bound(max_price); // First ticket > max_price
+        auto it = tickets.upper_bound(max_price); 
         if (it == tickets.begin()) {
-            cout << -1 << " "; // No valid ticket
+            cout << -1 << " "; 
         } else {
-            --it; // Get the largest ticket ≤ max_price
+            --it; 
             cout << *it << " ";
-            tickets.erase(it); // Remove the ticket
+            tickets.erase(it);
         }
     }
 
