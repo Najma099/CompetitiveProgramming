@@ -1,0 +1,8 @@
+class Solution {
+  public:
+    int getSize(Node* node) {
+        // code here
+        if(node == NULL) return 0;
+        return getSize(node ->left) + getSize(node -> right) + 1;
+    }
+};
