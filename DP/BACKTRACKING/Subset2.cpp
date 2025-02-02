@@ -12,11 +12,11 @@ public:
         for(int i = 0; i < freq; i++) {
             store.push_back(nums[idx]);
             rec(freq + idx , n , m, ans, store,nums);
-            //store.pop_back();
-        }
-        for(int i = 0; i < freq; i++) {
             store.pop_back();
         }
+        // for(int i = 0; i < freq; i++) {
+        //     store.pop_back();
+        // }
 
     }
     vector<vector<int>> subsetsWithDup(vector<int>& nums) {
