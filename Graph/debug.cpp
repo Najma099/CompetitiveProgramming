@@ -37,7 +37,9 @@ public:
             pq.pop();
 
             cout << "Visiting (" << i << ", " << j << ") at time = " << time << endl;
+            
 
+            //incorrect Code
             if (i == n - 1 && j == m - 1) {
                 cout << "Reached destination (" << i << ", " << j << "). Time = " << time << ", FireTime = " << fireTime[i][j] << endl;
                 return time <= fireTime[i][j];
@@ -53,6 +55,20 @@ public:
                     cout << "Moving to (" << ii << ", " << jj << ") at time = " << time + 1 << ", FireTime = " << fireTime[ii][jj] << endl;
                 }
             }
+
+            //correct version
+            // if(time >= fireTime[i][j]) continue;
+
+            // for (int a = 0; a < 4; a++) {
+            //     int ii = i + arr[a];
+            //     int jj = j + brr[a];
+
+            //     if (ii >= 0 && jj >= 0 && ii < n && jj < m && !visited[ii][jj] && fireTime[ii][jj] != -1) {
+            //         visited[ii][jj] = true;
+            //         pq.push({{ii, jj}, time + 1});
+            //         cout << "Moving to (" << ii << ", " << jj << ") at time = " << time + 1 << ", FireTime = " << fireTime[ii][jj] << endl;
+            //     }
+            // }
         }
 
         cout << "No valid path found for mid = " << mid << endl;
